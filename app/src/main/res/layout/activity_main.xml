@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height= "?attr/actionBarSize"
+            app:title="@string/app_name"
+            android:background="@color/teal"
+            app:titleTextColor="@color/white"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:layout_marginTop="32sp"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/dd_logo" />
+
+    <TextView
+        android:id="@+id/Selected_Food"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
+        android:gravity="center"
+        android:text="@string/select_food"
+        android:textSize="32sp"
+        />
+
+    <EditText
+        android:id="@+id/add_food_text"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="168sp"
+        android:autofillHints="Add New Food"
+        android:ems="10"
+        android:hint="@string/hint_food"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/add_food"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/teal"
+        android:text="@string/add_button" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+
+    <Button
+        android:id="@+id/decide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/decide_button"
+        android:backgroundTint="@color/teal"
+        app:titleTextColor="@color/white"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>
